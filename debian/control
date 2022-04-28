@@ -1,0 +1,32 @@
+Source: plasma-applet-window-appmenu
+Section: kde
+Priority: optional
+Maintainer: Johan Källström <joka90@gmail.com>
+Uploaders: Johan Källström <joka90@gmail.com>,
+Build-Depends: cmake (>= 3.0~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.9.5~),
+               qtdeclarative5-dev,
+               libkf5plasma-dev,
+               libqt5x11extras5-dev,
+               libsm-dev,
+               libkf5configwidgets-dev,
+               libkdecorations2-dev,
+               libxcb-randr0-dev,
+               libkf5wayland-dev,
+               plasma-workspace-dev,
+               pkg-kde-tools
+Standards-Version: 4.6.0
+Homepage: https://github.com/joka90/plasma-applet-window-appmenu/
+Vcs-Browser: https://github.com/joka90/plasma-applet-window-appmenu/
+Vcs-Git: https://github.com/joka90/plasma-applet-window-appmenu.git
+Rules-Requires-Root: no
+
+
+Package: plasma-applet-window-appmenu
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Plasma 5 applet that shows the current window appmenu.
+ This is a Plasma 5 applet that shows the current window appmenu
+ in your panels.
